@@ -1,0 +1,47 @@
+body {
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.jumbotron {
+    background: linear-gradient(135deg, #72EDF2 10%, #0D6FFC 100%);
+    color: white;
+}
+
+.btn-info {
+    background-color: #5151E5;
+    border-color: #5151E5;
+}
+
+.btn-info:hover {
+    background-color: #3d3dbb;
+    border-color: #3d3dbb;
+}
+
+.card {
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+blockquote {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+footer {
+    font-size: 0.9rem;
+}

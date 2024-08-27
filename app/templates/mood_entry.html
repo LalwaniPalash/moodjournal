@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Mood Entry{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">Add Mood Entry</h1>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="mood" class="form-label">Mood</label>
+            <input required type="text" class="form-control" name="mood" id="mood" placeholder="Mood">
+        </div>
+        <label for="tod and date" class="form-label">Time of Day and Date</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="tod" id="tod" placeholder="Morning, Afternoon, Evening, Night">
+            <span class="input-group-text">and</span>
+            <input required type="date" class="form-control" name="date" id="date" placeholder="Date">
+        </div>        
+        <label for="energy_level" class="form-label">Energy Level and Sleep Quality</label>
+        <div class="input-group mb-3">
+            <select class="form-select" name="energy_level" id="energy_level">
+                <option selected>Select Energy Level</option>
+                <option value="1">1 - Very Low</option>
+                <option value="2">2 - Low</option>
+                <option value="3">3 - Moderate</option>
+                <option value="4">4 - High</option>
+                <option value="5">5 - Very High</option>
+            </select>
+            <select class="form-select" name="sleep_quality" id="sleep_quality">
+                <option selected>Select Sleep Quality</option>
+                <option value="1">1 - Very Poor</option>
+                <option value="2">2 - Poor</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            
+        </div>
+        <div class="mb-3">
+            <label for="activities" class="form-label">Activities</label>
+            <input type="text" class="form-control" name="activities" id="activities" placeholder="Activities">
+        </div>
+        <div class="mb-3">
+            <label for="tags" class="form-label">Tags</label>
+            <input type="text" class="form-control" name="tags" id="tags" placeholder="Tags (comma separated)">
+        </div>
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" name="location" id="location" placeholder="Location">
+        </div>
+        <div class="mb-3">
+            <label for="weather" class="form-label">Weather</label>
+            <input type="text" class="form-control" name="weather" id="weather" placeholder="Weather">
+        </div>
+        <div class="mb-3">
+            <label for="custom_notes" class="form-label">Notes</label>
+            <textarea class="form-control" name="custom_notes" id="custom_notes" rows="3" placeholder="Additional notes..."></textarea>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary" type="submit">Add Mood</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

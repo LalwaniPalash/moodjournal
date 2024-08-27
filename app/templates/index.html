@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="jumbotron text-center bg-light p-5 rounded">
+        <h1 class="display-4">Welcome to Mood Journal</h1>
+        <p class="lead">Track your daily mood and keep a journal of your feelings.</p>
+        <hr class="my-4">
+        <p>If you don't have an account, please register to get started. If you already have an account, log in to continue.</p>
+        <a class="btn btn-primary btn-lg mx-2" href="{{ url_for('routes.register') }}" role="button">Register</a>
+        <a class="btn btn-primary btn-lg mx-2" href="{{ url_for('routes.login') }}" role="button">Login</a>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Features</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <h5><i class="fas fa-calendar-day"></i> Daily Mood Tracking</h5>
+                            <p>Log your mood daily and see how it changes over time.</p>
+                        </li>
+                        <li class="mb-3">
+                            <h5><i class="fas fa-journal-whills"></i> Detailed Journal Entries</h5>
+                            <p>Add notes, activities, and other details to each entry to provide more context.</p>
+                        </li>
+                        <li class="mb-3">
+                            <h5><i class="fas fa-chart-line"></i> Visualize Your Data</h5>
+                            <p>View your mood trends and patterns through various charts and graphs.</p>
+                        </li>
+                        <li class="mb-3">
+                            <h5><i class="fas fa-lock"></i> Secure and Private</h5>
+                            <p>Your data is stored securely and only accessible by you.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Benefits</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <h5><i class="fas fa-search"></i> Self-awareness</h5>
+                            <p>Understand your emotions better and identify triggers.</p>
+                        </li>
+                        <li class="mb-3">
+                            <h5><i class="fas fa-heart"></i> Improved Mental Health</h5>
+                            <p>Keep track of your mental well-being and seek help when necessary.</p>
+                        </li>
+                        <li class="mb-3">
+                            <h5><i class="fas fa-seedling"></i> Personal Growth</h5>
+                            <p>Reflect on your moods and work towards personal improvement.</p>
+                        </li>
+                        <li class="mb-3">
+                            <h5><i class="fas fa-thumbs-up"></i> Easy to Use</h5>
+                            <p>A simple and intuitive interface makes logging your mood effortless.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h2>User Testimonials</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>"Mood Journal has been a game-changer for me. It's helped me keep track of my moods and understand my emotional patterns."</p>
+                        <footer class="blockquote-footer">Jane Doe, <cite title="Source Title">Regular User</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>"I love the simplicity and ease of use of this app. It has made a huge difference in my mental health journey."</p>
+                        <footer class="blockquote-footer">John Smith, <cite title="Source Title">Regular User</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12 text-center">
+            <h2>Get Started Today!</h2>
+            <p class="lead">Join our community and start tracking your moods and emotions.</p>
+            <a class="btn btn-dark btn-lg mx-2" href="{{ url_for('routes.register') }}" role="button">Register</a>
+            <a class="btn btn-dark btn-lg mx-2" href="{{ url_for('routes.login') }}" role="button">Login</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
